@@ -41,13 +41,13 @@ func (domainList *DomainList) judge(url *URL) (domainType DomainType) {
 	if url.Domain == "" { // simple host or private ip
 		return domainTypeDirect
 	}
-	if domainList.Domain[url.Host] == domainTypeDirect || domainList.Domain[url.Domain] == domainTypeDirect {
-		debug.Printf("host or domain should direct")
-		return domainTypeDirect
-	}
 	if domainList.Domain[url.Host] == domainTypeProxy || domainList.Domain[url.Domain] == domainTypeProxy {
 		debug.Printf("host or domain should using proxy")
 		return domainTypeProxy
+	}
+	if domainList.Domain[url.Host] == domainTypeDirect || domainList.Domain[url.Domain] == domainTypeDirect {
+		debug.Printf("host or domain should direct")
+		return domainTypeDirect
 	}
 
 	if !config.JudgeByIP {
