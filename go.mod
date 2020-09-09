@@ -7,10 +7,7 @@ require (
 	github.com/cyfdecyf/bufio v0.0.0-20130801052708-9601756e2a6b
 	github.com/cyfdecyf/color v0.0.0-20130827105946-31d518c963d2
 	github.com/cyfdecyf/leakybuf v0.0.0-20140618011800-ffae040843be
-	github.com/shadowsocks/shadowsocks-go v0.0.0-20190614083952-6a03846ca9c0
-	golang.org/x/crypto v0.0.0-20190618222545-ea8f1a30c443 // indirect
-	golang.org/x/net v0.0.0-20190619014844-b5b0513f8c1b // indirect
-	golang.org/x/sys v0.0.0-20190618155005-516e3c20635f // indirect
-	golang.org/x/text v0.3.2 // indirect
-	golang.org/x/tools v0.0.0-20190618233249-04b924abaa25 // indirect
+	github.com/shadowsocks/shadowsocks-go v0.0.0-20200409064450-3e585ff90601
+	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
+	golang.org/x/sys v0.0.0-20200909081042-eff7692f9009 // indirect
 )
